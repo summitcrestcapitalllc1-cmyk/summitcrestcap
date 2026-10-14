@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+</head>
+<body>
+<title>Summit Crest Capital</title>
+<meta name="description" content="Sell your house fast for cash with Summit Crest Capital. We buy houses nationwide. Get a fair, no-obligation cash offer within 24 hours. No repairs, no fees, no commissions. Close in as little as 7 days.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Public+Sans:wght@400;500;600;700&display=swap">
+<style>
+:root{
+  color-scheme:light;
+  --ground:#FFFFFF; --surface:#FFFFFF; --tint:#F1F6FB; --line:#E2EAF3; --field:#F7FAFD;
+  --ink:#0E1F2E; --muted:#56687A;
+  --navy:#0B2135; --navy-2:#12324E; --blue:#1D5B9E; --blue-soft:#3B82C4; --on-navy:#EAF2F9;
+  --amber:#E89423; --amber-hover:#D3821A; --on-amber:#1A1206;
+  --go:#27865F;
+  --display:"Archivo",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --body:"Public Sans",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --shadow:0 16px 44px -24px rgba(11,33,53,.35);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{margin:0;background:#FFFFFF;color:var(--ink);font:400 1rem/1.65 var(--body);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+h1,h2,h3,h4{font-family:var(--display);line-height:1.08;margin:0;text-wrap:balance;letter-spacing:-0.02em}
+p{margin:0}
+.wrap{max-width:1160px;margin-inline:auto;padding-inline:20px}
+.eyebrow{font:700 .72rem/1 var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--blue)}
+.on-dark .eyebrow{color:var(--amber)}
+.fill{background:#FDF0D8;color:#7A4B10;padding:0 .3em;border-radius:3px;font-weight:600}
+:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;font:700 1rem/1 var(--display);padding:1.05em 1.6em;border-radius:8px;border:0;cursor:pointer;text-decoration:none;transition:background .15s,transform .1s,box-shadow .15s;white-space:nowrap}
+.btn-amber{background:var(--amber);color:var(--on-amber);box-shadow:0 8px 20px -10px rgba(232,148,35,.9)}
+.btn-amber:hover{background:var(--amber-hover)}
+.btn-amber:active{transform:translateY(1px)}
+.btn-navy{background:var(--navy);color:var(--on-navy)}
+.btn-navy:hover{background:var(--navy-2)}
+.btn-ghost{background:transparent;color:var(--on-navy);box-shadow:inset 0 0 0 1.5px rgba(234,242,249,.45)}
+.btn-ghost:hover{box-shadow:inset 0 0 0 1.5px var(--on-navy)}
+.btn-sm{padding:.8em 1.1em;font-size:.92rem}
+
+/* header */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:40;background:var(--navy);color:var(--on-navy);box-shadow:0 1px 0 rgba(255,255,255,.08)}
+.top .wrap{display:flex;align-items:center;gap:20px;min-height:72px}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none;white-space:nowrap;margin-right:auto}
+.nav{margin-right:22px}
+.brand svg{flex:none}
+.brand b{font:800 1.08rem/1 var(--display);letter-spacing:.04em}
+.brand small{display:block;font:600 .6rem/1 var(--body);letter-spacing:.26em;text-transform:uppercase;opacity:.72;margin-top:5px}
+.nav{display:flex;gap:26px;font-weight:500;font-size:.95rem}
+.nav a{text-decoration:none;opacity:.85;padding-block:6px}
+.nav a:hover{opacity:1;box-shadow:inset 0 -2px 0 var(--amber)}
+.tel{display:flex;align-items:center;gap:8px;text-decoration:none;font:700 1rem/1 var(--display)}
+.tel svg{color:var(--amber)}
+.tel span{display:block;white-space:nowrap}
+.tel small{display:block;font:500 .64rem/1 var(--body);letter-spacing:.1em;text-transform:uppercase;opacity:.65;margin-bottom:5px}
+@media (max-width:980px){.nav{display:none}}
+@media (max-width:560px){.brand small{display:none}.brand b{font-size:.95rem}.brand svg{width:32px;height:32px}.top .wrap{gap:10px;min-height:64px}.top .btn{padding:.7em .85em;font-size:.8rem}}
+@media (max-width:360px){.top .btn{display:none}}
+
+/* hero */
+.hero{position:relative;background:var(--surface);color:var(--ink);overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(900px 420px at 72% 8%,var(--tint),transparent 70%);z-index:0}
+.hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:start;padding-block:62px 84px}
+.hero h1{font-size:clamp(2.5rem,5.2vw,4.15rem);font-weight:800;margin-top:16px}
+.hero h1 .u{color:var(--blue)}
+.hero .lede{font-size:1.18rem;max-width:38ch;margin-top:20px;color:var(--muted)}
+.quick{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px;max-width:560px}
+.quick input{flex:1 1 240px;min-width:0;width:100%;font:inherit;font-size:1rem;padding:1.05em 1.1em;border-radius:8px;border:1.5px solid var(--line);background:var(--field);color:var(--ink)}
+.quick input::placeholder{color:var(--muted)}
+.quick input:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(29,91,158,.2)}
+.quick .btn{flex:1 1 auto}
+@media (max-width:560px){.quick{flex-direction:column}.quick input{flex:0 0 auto}.quick .btn{width:100%}}
+.hero-trust{display:flex;flex-wrap:wrap;gap:12px 26px;margin:28px 0 0;padding:0;list-style:none;font-size:.95rem;color:var(--ink);font-weight:600}
+.hero-trust li{display:flex;align-items:center;gap:9px}
+.hero-trust svg{flex:none;color:var(--go)}
+@media (max-width:920px){.hero .wrap{grid-template-columns:1fr;gap:38px;padding-block:48px 72px}}
+
+/* form card */
+.card{background:var(--surface);color:var(--ink);border-radius:16px;box-shadow:var(--shadow);overflow:hidden;border:1px solid var(--line)}
+.card-head{background:linear-gradient(135deg,var(--blue),var(--navy-2));color:#fff;padding:22px 26px}
+.card-head h2{font-size:1.4rem;color:#fff}
+.card-head p{font-size:.9rem;opacity:.85;margin-top:6px}
+.card-body{padding:26px}
+form{display:grid;gap:15px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+@media (max-width:480px){.row2{grid-template-columns:1fr}}
+label{display:grid;gap:7px;font-weight:600;font-size:.84rem}
+label .req{color:var(--amber)}
+input,select{font:inherit;font-size:1rem;width:100%;padding:.8em .9em;border:1.5px solid var(--line);border-radius:8px;background:var(--field);color:var(--ink)}
+input:focus,select:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(29,91,158,.22)}
+.consent{display:flex;gap:11px;align-items:flex-start;font-weight:400;font-size:.73rem;line-height:1.55;color:var(--muted)}
+.consent input{width:19px;height:19px;flex:none;margin-top:2px;accent-color:var(--blue)}
+.consent a{color:var(--ink)}
+form .btn{width:100%}
+.secure{display:flex;align-items:center;justify-content:center;gap:7px;font-size:.76rem;color:var(--muted);margin-top:-2px}
+.secure svg{color:var(--go)}
+.done{text-align:center;padding:30px 6px}
+.done h3{font-size:1.5rem;margin-top:14px}
+.done p{color:var(--muted);margin-top:10px}
+
+/* trust strip */
+.strip{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.strip .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding-block:26px}
+.tr{display:flex;align-items:center;gap:13px}
+.tr .ic{flex:none;width:40px;height:40px;border-radius:9px;background:var(--tint);color:var(--blue);display:grid;place-items:center}
+.tr b{display:block;font:700 .97rem/1.2 var(--display)}
+.tr span{display:block;font-size:.83rem;color:var(--muted);margin-top:3px}
+@media (max-width:860px){.strip .wrap{grid-template-columns:1fr 1fr}}
+@media (max-width:480px){.strip .wrap{grid-template-columns:1fr}}
+
+/* sections */
+section.block{padding-block:88px}
+.soft{background:var(--tint)}
+.head{max-width:680px}
+.head h2{font-size:clamp(2rem,3.7vw,2.8rem);font-weight:800;margin-top:14px}
+.head p{color:var(--muted);margin-top:16px;font-size:1.07rem}
+.on-dark .head p{color:#B9CCDC}
+.mb{margin-bottom:48px}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.stp{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:30px 26px;position:relative;box-shadow:0 10px 30px -22px rgba(11,33,53,.5)}
+.stp .num{position:absolute;top:-16px;left:26px;width:38px;height:38px;border-radius:50%;background:var(--amber);color:var(--on-amber);display:grid;place-items:center;font:800 1.02rem/1 var(--display)}
+.stp h3{font-size:1.22rem;margin-top:16px}
+.stp p{color:var(--muted);margin-top:11px;font-size:.97rem}
+.stp .when{display:inline-block;margin-top:16px;font:700 .72rem/1 var(--body);letter-spacing:.1em;text-transform:uppercase;color:var(--blue);background:var(--tint);padding:.6em .8em;border-radius:999px}
+@media (max-width:860px){.steps{grid-template-columns:1fr;gap:34px}}
+.center{display:flex;justify-content:center;margin-top:48px}
+
+/* compare */
+.compare{background:var(--surface)}
+.table{background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--shadow)}
+table{width:100%;border-collapse:collapse;font-size:.98rem}
+th,td{padding:17px 20px;text-align:left;border-bottom:1px solid var(--line)}
+thead th{background:var(--navy);color:var(--on-navy);font:700 .95rem/1.3 var(--display);border-bottom:0}
+thead th:nth-child(2){background:var(--blue)}
+tbody th{font-weight:600;color:var(--ink);width:34%}
+td{color:var(--muted)}
+td.yes{color:var(--ink);font-weight:600}
+td .mark{display:inline-flex;align-items:center;gap:8px}
+td .mark svg{flex:none}
+.yes .mark svg{color:var(--go)}
+.no .mark svg{color:#B1434A}
+tbody tr:last-child th,tbody tr:last-child td{border-bottom:0}
+.tbl-scroll{overflow-x:auto}
+@media (max-width:620px){th,td{padding:14px 13px;font-size:.9rem}tbody th{width:38%}}
+
+/* advantages */
+.adv-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.adv{display:flex;gap:18px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:28px;box-shadow:0 10px 30px -24px rgba(11,33,53,.5)}
+.adv .ic{flex:none;width:52px;height:52px;border-radius:12px;background:var(--navy);color:var(--amber);display:grid;place-items:center}
+.adv h3{font-size:1.14rem}
+.adv p{color:var(--muted);margin-top:8px;font-size:.97rem}
+@media (max-width:760px){.adv-grid{grid-template-columns:1fr}}
+
+/* situations */
+.sit-wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+.sit{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:8px}
+.sit span{display:flex;align-items:center;gap:10px;font-weight:600;font-size:.97rem;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:.95em 1.1em}
+.sit span::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--amber);flex:none}
+@media (max-width:860px){.sit-wrap{grid-template-columns:1fr;gap:36px}}
+@media (max-width:420px){.sit{grid-template-columns:1fr}}
+.photo{position:relative;border-radius:16px;overflow:hidden;background:linear-gradient(150deg,#FFFFFF,var(--tint));border:1px solid var(--line);box-shadow:var(--shadow)}
+.photo::before{content:"";position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 180 180'%3E%3Cpath d='M40 110 L90 66 L140 110 L140 148 L40 148 Z' fill='none' stroke='%231D5B9E' stroke-opacity='.22' stroke-width='3'/%3E%3C/svg%3E") center/150px no-repeat}
+.photo img{position:relative;width:100%;height:100%;object-fit:cover;display:block}
+.photo-tall{aspect-ratio:4/5}
+@media (max-width:860px){.photo-tall{aspect-ratio:16/10}}
+
+/* reviews */
+.reviews{display:flex;flex-wrap:wrap;justify-content:center;gap:20px}
+.rev{flex:1 1 300px;max-width:356px}
+
+.rev{margin:0;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:26px;box-shadow:0 10px 30px -24px rgba(11,33,53,.5);display:flex;flex-direction:column;gap:15px}
+.rev .pr{width:48px;height:48px;border-radius:12px;background:var(--navy);color:var(--amber);display:grid;place-items:center}
+.rev h3{font-size:1.12rem;margin-top:-4px}
+.rev p{color:var(--muted);font-size:.97rem}
+.rev .stars{color:var(--amber);letter-spacing:3px;font-size:.95rem}
+.rev blockquote{margin:0;font-size:.98rem;line-height:1.65;color:var(--muted)}
+.rev blockquote::before{content:"\201C"}
+.rev blockquote::after{content:"\201D"}
+.rev cite{font-style:normal;font-weight:600;font-size:.89rem;color:var(--muted);margin-top:auto;display:flex;align-items:center;gap:10px}
+.rev .av{width:34px;height:34px;border-radius:50%;background:var(--tint);color:var(--blue);display:grid;place-items:center;font:700 .85rem/1 var(--display)}
+@media (max-width:880px){.rev{max-width:none}}
+
+/* why */
+.why{background:var(--surface)}
+.why .wrap{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.why h2{font-size:clamp(2rem,3.7vw,2.8rem);font-weight:800;margin-top:14px}
+.why-copy p{color:var(--muted);margin-top:18px;max-width:58ch}
+.why-copy .btn{margin-top:30px}
+.collage{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:14px;aspect-ratio:1/1}
+.collage .photo:first-child{grid-row:span 2}
+@media (max-width:860px){.why .wrap{grid-template-columns:1fr;gap:40px}}
+
+/* faq */
+.faq{max-width:840px}
+details{background:var(--surface);border:1px solid var(--line);border-radius:12px;margin-bottom:12px}
+summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:18px;align-items:center;padding:20px 22px;font:700 1.08rem/1.35 var(--display)}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"";flex:none;width:11px;height:11px;border-right:2.5px solid var(--blue);border-bottom:2.5px solid var(--blue);transform:rotate(45deg);margin-top:-5px;transition:transform .2s}
+details[open] summary::after{transform:rotate(-135deg);margin-top:3px}
+details p{color:var(--muted);padding:0 22px 22px;max-width:70ch}
+
+/* final */
+.final{background:linear-gradient(120deg,var(--blue),var(--navy));color:#fff}
+.final .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:28px;padding-block:64px}
+.final h2{font-size:clamp(1.9rem,3.4vw,2.6rem);font-weight:800;color:#fff}
+.final p{margin-top:10px;font-size:1.06rem;color:#D4E4F2}
+.final-cta{display:flex;flex-wrap:wrap;gap:12px}
+
+/* footer */
+footer{background:var(--navy);color:var(--on-navy);padding-block:60px 28px;font-size:.92rem}
+.foot{display:grid;grid-template-columns:2fr 1fr 1fr;gap:44px}
+.foot p{opacity:.7;margin-top:16px;max-width:52ch;font-size:.86rem;line-height:1.65}
+.foot h4{font:700 .72rem/1 var(--body);letter-spacing:.16em;text-transform:uppercase;opacity:.6;margin:0 0 16px}
+.foot ul{list-style:none;margin:0;padding:0;display:grid;gap:11px}
+.foot a{text-decoration:none;opacity:.88}
+.foot a:hover{opacity:1;text-decoration:underline}
+.copy{margin-top:46px;padding-top:22px;border-top:1px solid rgba(234,242,249,.16);opacity:.6;font-size:.81rem}
+@media (max-width:760px){.foot{grid-template-columns:1fr}}
+
+/* sticky mobile bar */
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:50;display:none;gap:10px;padding:10px 14px;padding-bottom:calc(10px + env(safe-area-inset-bottom,0px));background:var(--surface);border-top:1px solid var(--line);box-shadow:0 -8px 24px -12px rgba(11,33,53,.4)}
+.bar .btn{flex:1}
+@media (max-width:720px){.bar{display:flex}body{padding-bottom:76px}}
+</style>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Summit Crest Capital home">
+      <svg width="38" height="38" viewBox="0 0 38 38" aria-hidden="true"><rect width="38" height="38" rx="9" fill="#1D5B9E"/><path d="M6 29 L15.5 13 L20 20 L23 15.5 L32 29 Z" fill="#EAF2F9"/><path d="M15.5 13 L18.2 17.3 L16.4 16.5 L14.4 18 L13 16.8 Z" fill="#E89423"/></svg>
+      <span><b>SUMMIT CREST</b><small>Capital</small></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#how-it-works">How It Works</a>
+      <a href="#compare">Compare</a>
+      <a href="#about">Why Us</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="btn btn-amber btn-sm" href="#lead-form">Get My Cash Offer</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <div class="eyebrow">Cash home buyers</div>
+        <h1>Sell your house <span class="u">fast</span> for cash.</h1>
+        <p class="lede">Get a fair cash offer within 24 hours and close on the date you pick. No repairs, no fees, no showings.</p>
+        <form class="quick" id="quick-form">
+          <input id="q-address" type="text" placeholder="Enter your property address" aria-label="Property address" autocomplete="street-address">
+          <button class="btn btn-amber" type="submit">Get My Cash Offer</button>
+        </form>
+        <ul class="hero-trust">
+          <li><svg width="19" height="19" viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5l4 4 8-9"/></svg>No obligation</li>
+          <li><svg width="19" height="19" viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5l4 4 8-9"/></svg>We buy nationwide</li>
+          <li><svg width="19" height="19" viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5l4 4 8-9"/></svg>You pick the closing date</li>
+        </ul>
+      </div>
+
+      <div class="card" id="lead-form">
+        <div class="card-head">
+          <h2>Get Your Cash Offer</h2>
+          <p>Free, no obligation, and takes about a minute.</p>
+        </div>
+        <div class="card-body">
+          <div id="form-wrap">
+            <form id="offer-form" novalidate>
+              <div class="row2">
+                <label for="f-name"><span>First Name <span class="req">*</span></span><input id="f-name" name="first_name" autocomplete="given-name" required></label>
+                <label for="f-phone"><span>Phone Number <span class="req">*</span></span><input id="f-phone" name="phone" type="tel" autocomplete="tel" required></label>
+              </div>
+              <label for="f-address"><span>Property Address <span class="req">*</span></span><input id="f-address" name="address" autocomplete="street-address" required></label>
+              <div class="row2">
+                <label for="f-email"><span>Email Address <span class="req">*</span></span><input id="f-email" name="email" type="email" autocomplete="email" required></label>
+                <label for="f-cond">Property Condition
+                  <select id="f-cond" name="condition">
+                    <option value="">Select condition</option>
+                    <option>Excellent</option><option>Good</option><option>Fair</option><option>Needs Work</option>
+                  </select>
+                </label>
+              </div>
+              <label class="consent" for="f-consent"><input id="f-consent" name="sms_consent" type="checkbox" required>
+                <span>By checking this box, I agree to receive SMS text messages from Summit Crest Capital, including property inquiry responses, cash offer updates, appointment reminders, transaction updates, and follow-up messages related to my property. Message frequency varies. Message and data rates may apply. Reply STOP to opt out or HELP for support. I have read the <a href="terms.html">Terms of Service</a> and <a href="privacy.html">Privacy Policy</a>.</span>
+              </label>
+              <button class="btn btn-amber" type="submit">Get My Cash Offer Now</button>
+              <p class="secure"><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>Your information stays private. We never sell your data.</p>
+            </form>
+          </div>
+          <div class="done" id="form-done" hidden>
+            <svg width="56" height="56" viewBox="0 0 52 52" aria-hidden="true"><circle cx="26" cy="26" r="26" fill="#27865F"/><path d="M15 27l7 7 15-16" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <h3>Got it. We're on it.</h3>
+            <p>Someone from our team will reach out shortly with next steps on your cash offer.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="strip">
+    <div class="wrap">
+      <div class="tr"><div class="ic"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2" stroke-linecap="round"/></svg></div><div><b>Offer in 24 hours</b><span>One business day, start to offer</span></div></div>
+      <div class="tr"><div class="ic"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.2 7.9-8 9-4.8-1.1-8-4.5-8-9V6z"/></svg></div><div><b>No obligation</b><span>Turn down the offer at any point</span></div></div>
+      <div class="tr"><div class="ic"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-4v-6H8v6H4a1 1 0 0 1-1-1z" stroke-linejoin="round"/></svg></div><div><b>Nationwide buyers</b><span>We buy houses in any condition</span></div></div>
+      <div class="tr"><div class="ic"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M15 9.5c-.6-1-1.8-1.5-3-1.5-1.7 0-3 .9-3 2.2 0 2.8 6 1.6 6 4.3 0 1.3-1.3 2.2-3 2.2-1.3 0-2.5-.6-3-1.6M12 6v12" stroke-linecap="round"/></svg></div><div><b>Zero fees</b><span>No commissions or closing costs</span></div></div>
+    </div>
+  </div>
+
+  <section class="block soft" id="how-it-works">
+    <div class="wrap">
+      <div class="head mb">
+        <div class="eyebrow">How it works</div>
+        <h2>Three steps from first call to cash in hand</h2>
+        <p>No listing, no showings, no waiting on a buyer's loan to come through.</p>
+      </div>
+      <div class="steps">
+        <div class="stp">
+          <div class="num">1</div>
+          <h3>Tell us about your property</h3>
+          <p>Fill out the short form with the address and a few details. We ask a few questions about the house and your timeline so we can price it accurately.</p>
+          <div class="when">Takes 1 minute</div>
+        </div>
+        <div class="stp">
+          <div class="num">2</div>
+          <h3>Get your cash offer</h3>
+          <p>We run the numbers on your property and nearby sales, then send a fair, no-obligation offer. We will walk you through how we got there.</p>
+          <div class="when">Within 24 hours</div>
+        </div>
+        <div class="stp">
+          <div class="num">3</div>
+          <h3>Close and get paid</h3>
+          <p>Pick the closing date that works for you. We handle the title work and paperwork, and you get your money at closing.</p>
+          <div class="when">As fast as 7 days</div>
+        </div>
+      </div>
+      <div class="center"><a class="btn btn-amber" href="#lead-form">Get My Cash Offer</a></div>
+    </div>
+  </section>
+
+  <section class="block compare" id="compare">
+    <div class="wrap">
+      <div class="head mb">
+        <div class="eyebrow">Compare your options</div>
+        <h2>Selling to us versus listing with an agent</h2>
+        <p>A traditional listing can work well when you have time and the house is in good shape. Here is how the two stack up.</p>
+      </div>
+      <div class="table">
+        <div class="tbl-scroll">
+          <table>
+            <thead><tr><th scope="col">&nbsp;</th><th scope="col">Selling to Summit Crest</th><th scope="col">Listing with an agent</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Time to close</th><td class="yes"><span class="mark"><svg width="17" height="17" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg>As little as 7 days</span></td><td class="no"><span class="mark"><svg width="17" height="17" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M5 5l10 10M15 5L5 15"/></svg>60 to 90 days on average</span></td></tr>
+              <tr><th scope="row">Commissions and fees</th><td class="yes"><span class="mark"><svg width="17" height="17" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg>None</span></td><td class="no"><span class="mark"><svg width="17" height="17" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M5 5l10 10M15 5L5 15"/></svg>Typically 6 to 10% of the price</span></td></tr>
+              <tr><th scope="row">Repairs and cleaning</th><td class="yes"><span class="mark"><svg width="17" height="17" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg>We buy it as-is</span></td><td class="no"><span class="mark"><svg width="17" height="17" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M5 5l10 10M15 5L5 15"/></svg>Paid for by you before listing</span></td></tr>
+              <tr><th scope="row">Showings</th><td class="yes"><span class="mark"><svg width="17" height="17" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg>One walkthrough</span></td><td class="no"><span class="mark"><svg width="17" height="17" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M5 5l10 10M15 5L5 15"/></svg>Open houses and showings</span></td></tr>
+              <tr><th scope="row">Risk of falling through</th><td class="yes"><span class="mark"><svg width="17" height="17" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg>Cash, so no loan to deny</span></td><td class="no"><span class="mark"><svg width="17" height="17" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M5 5l10 10M15 5L5 15"/></svg>Financing and appraisal can kill it</span></td></tr>
+              <tr><th scope="row">Sale price</th><td class="yes">Below retail, since we take on the repairs and the risk</td><td>Can be higher if the house shows well and you can wait</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="head mb">
+        <div class="eyebrow">The Summit Crest advantage</div>
+        <h2>Why selling to us is simple</h2>
+      </div>
+      <div class="adv-grid">
+        <div class="adv">
+          <div class="ic"><svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2M9 2h6" stroke-linecap="round"/></svg></div>
+          <div><h3>Fast, guaranteed closings</h3><p>Our offers are backed by cash, so there is no financing to fall through. Close in as little as 7 days.</p></div>
+        </div>
+        <div class="adv">
+          <div class="ic"><svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z" stroke-linejoin="round"/></svg></div>
+          <div><h3>No repairs or cleaning</h3><p>We buy houses as-is. Leave behind whatever you do not want and we will take care of the rest.</p></div>
+        </div>
+        <div class="adv">
+          <div class="ic"><svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5" fill="currentColor" stroke="none"/></svg></div>
+          <div><h3>We buy nationwide</h3><p>We purchase houses in markets across the United States, and we price every offer off what is actually selling near you.</p></div>
+        </div>
+        <div class="adv">
+          <div class="ic"><svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16v12H4z" stroke-linejoin="round"/><path d="M4 7l8-4 8 4M9 19v-5h6v5" stroke-linejoin="round"/></svg></div>
+          <div><h3>No agent fees or commissions</h3><p>You work with us directly, so the number we agree on is the number you walk away with.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" style="padding-top:0">
+    <div class="wrap sit-wrap">
+      <div>
+        <div class="eyebrow">Situations we help with</div>
+        <h2 style="font-size:clamp(1.9rem,3.5vw,2.6rem);font-weight:800;margin-top:14px">Whatever is going on with the house, we have probably seen it</h2>
+        <div class="sit">
+          <span>Avoiding foreclosure</span><span>Inherited property</span>
+          <span>Divorce</span><span>Job relocation</span>
+          <span>Tired of tenants</span><span>Major repairs needed</span>
+          <span>Behind on taxes</span><span>Vacant house</span>
+        </div>
+      </div>
+      <div class="photo photo-tall"><img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=900&q=70" alt="Two-story home with a front lawn" loading="lazy" onerror="this.remove()"></div>
+    </div>
+  </section>
+
+  <section class="block" style="padding-top:0">
+    <div class="wrap">
+      <div class="head mb">
+        <div class="eyebrow">What sellers say</div>
+        <h2>From homeowners we have worked with</h2>
+      </div>
+      <div class="reviews">
+        <figure class="rev">
+          <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <h3>Quick and Easy Sale</h3>
+          <blockquote>I needed to sell my house quickly and didn't want to deal with repairs or showings. The team made the process simple, explained everything clearly, and helped me move forward without the usual stress.</blockquote>
+          <cite><span class="av">M</span>Michael R.</cite>
+        </figure>
+        <figure class="rev">
+          <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <h3>No Repairs Needed</h3>
+          <blockquote>My property needed a lot of work, and I didn't have the time or money to fix it up. They made me an offer as-is, and I didn't have to worry about making repairs before selling.</blockquote>
+          <cite><span class="av">J</span>Jennifer M.</cite>
+        </figure>
+        <figure class="rev">
+          <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <h3>Professional and Honest</h3>
+          <blockquote>From the first phone call to closing, communication was great. Everything was explained upfront, and I knew what to expect throughout the process. I appreciated how straightforward everything was.</blockquote>
+          <cite><span class="av">D</span>David T.</cite>
+        </figure>
+        <figure class="rev">
+          <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <h3>Helped Me Move On</h3>
+          <blockquote>I had a property I no longer wanted to maintain, and selling it the traditional way felt overwhelming. They gave me another option and helped make the sale much easier than I expected.</blockquote>
+          <cite><span class="av">S</span>Sarah L.</cite>
+        </figure>
+        <figure class="rev">
+          <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <h3>Convenient Closing</h3>
+          <blockquote>I wanted a simple way to sell my house without dealing with real estate agents, open houses, and endless negotiations. The process was convenient, and the team kept me informed every step of the way.</blockquote>
+          <cite><span class="av">R</span>Robert W.</cite>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="block why" id="about">
+    <div class="wrap">
+      <div class="why-copy">
+        <div class="eyebrow">About Summit Crest Capital</div>
+        <h2>Why sellers choose us</h2>
+        <p>Summit Crest Capital is a real estate investment company that buys houses for cash nationwide. Whether you are facing foreclosure, dealing with an inherited property, relocating, or just need the house gone, we give you a simple alternative to listing: no realtor commissions, no closing costs, and no waiting on bank financing.</p>
+        <p>You get a straight answer and a fair number within 24 hours, and we buy in any condition with zero repairs on your end. From the first call to closing day, we handle the details so you can move on.</p>
+        <a class="btn btn-amber" href="#lead-form">Get My Cash Offer</a>
+      </div>
+      <div class="collage">
+        <div class="photo"><img src="https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?auto=format&fit=crop&w=900&q=70" alt="Single-family home exterior" loading="lazy" onerror="this.remove()"></div>
+        <div class="photo"><img src="https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&w=700&q=70" alt="Renovated home exterior" loading="lazy" onerror="this.remove()"></div>
+        <div class="photo"><img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=700&q=70" alt="Home with a driveway at dusk" loading="lazy" onerror="this.remove()"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="faq">
+    <div class="wrap">
+      <div class="head mb">
+        <div class="eyebrow">Common questions</div>
+        <h2>Questions sellers ask us</h2>
+      </div>
+      <div class="faq">
+        <details open><summary>How fast can you close on my house?</summary><p>As little as 7 days. Because we pay cash, there is no loan underwriting or appraisal slowing things down. If you need more time, that is fine too. You pick the date.</p></details>
+        <details><summary>Do I need to make repairs before selling?</summary><p>No. We buy houses as-is. Roof, foundation, plumbing, outdated everything, it does not matter. You do not need to clean or stage either. We handle all of that after closing.</p></details>
+        <details><summary>What fees or commissions do you charge?</summary><p>None. No realtor commissions, no closing costs, no hidden fees. A traditional sale can cost 6 to 10% in commissions and closing expenses. With us, the price we agree on is what you walk away with.</p></details>
+        <details><summary>How do you come up with your offer?</summary><p>We look at the property's condition, location, recent comparable sales nearby, and what it will cost to fix up. You will have your offer within 24 hours of sending us your details, and we are happy to walk you through the numbers.</p></details>
+        <details><summary>Will your offer be less than what I could list for?</summary><p>Usually yes. We take on the repairs, the holding costs, and the risk, and you get speed, certainty, and zero fees in return. Plenty of sellers do better with us once commissions, repairs, and months of payments come out of a listing price.</p></details>
+        <details><summary>Do you buy houses in my area?</summary><p>We buy nationwide, in markets across the United States. Send us the address and we will tell you right away whether we can make an offer on it.</p></details>
+        <details><summary>Am I obligated to accept the offer?</summary><p>Not at all. The offer is free and there is no pressure. If it does not work for you, you can walk away.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="final">
+    <div class="wrap">
+      <div>
+        <h2>Ready to get your cash offer?</h2>
+        <p>Send us the address and we will take it from there. No pressure, no obligation.</p>
+      </div>
+      <div class="final-cta">
+        <a class="btn btn-amber" href="#lead-form">Get My Cash Offer</a>
+        <a class="btn btn-ghost" href="mailto:summitcrestcapital1@gmail.com">Email Us</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a class="brand" href="#top" aria-label="Summit Crest Capital home">
+          <svg width="38" height="38" viewBox="0 0 38 38" aria-hidden="true"><rect width="38" height="38" rx="9" fill="#1D5B9E"/><path d="M6 29 L15.5 13 L20 20 L23 15.5 L32 29 Z" fill="#EAF2F9"/><path d="M15.5 13 L18.2 17.3 L16.4 16.5 L14.4 18 L13 16.8 Z" fill="#E89423"/></svg>
+          <span><b>SUMMIT CREST</b><small>Capital</small></span>
+        </a>
+        <p>Summit Crest Capital LLC is a real estate investment company specializing in cash home purchases across the United States. We are not licensed real estate agents or brokers. All transactions involve the direct purchase and sale of residential real property for a principal investor.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#compare">Compare Options</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:summitcrestcapital1@gmail.com">summitcrestcapital1@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">© <span id="yr">2026</span> Summit Crest Capital LLC. All rights reserved.</div>
+  </div>
+</footer>
+
+<div class="bar">
+  <a class="btn btn-amber btn-sm" href="#lead-form">Get My Cash Offer</a>
+</div>
+
+<script>
+(function(){
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  var quick = document.getElementById('quick-form');
+  var full = document.getElementById('offer-form');
+  quick.addEventListener('submit', function(e){
+    e.preventDefault();
+    var v = document.getElementById('q-address').value;
+    var target = document.getElementById('f-address');
+    if (v) { target.value = v; }
+    document.getElementById('lead-form').scrollIntoView({behavior:'smooth', block:'start'});
+    setTimeout(function(){ (v ? document.getElementById('f-name') : target).focus({preventScroll:true}); }, 450);
+  });
+  full.addEventListener('submit', function(e){
+    e.preventDefault();
+    var bad = Array.prototype.find.call(full.querySelectorAll('[required]'), function(el){ return !el.checkValidity(); });
+    if (bad){ full.reportValidity(); bad.focus(); return; }
+    // TODO: send the lead to the CRM / webhook here, e.g.
+    // fetch('YOUR_WEBHOOK_URL', {method:'POST', body:new FormData(full)});
+    document.getElementById('form-wrap').hidden = true;
+    document.getElementById('form-done').hidden = false;
+  });
+})();
+</script>
+
+</body>
+</html>
